@@ -79,7 +79,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     });
     var markerDefaultStyle = new style_1.Style({
         image: new style_1.Icon({
-            anchor: [0.5, 1.0],
+            anchor: [0.5, 0.5],
             anchorXUnits: IconAnchorUnits_1.default.FRACTION,
             anchorYUnits: IconAnchorUnits_1.default.FRACTION,
             src: defaultpin_png_1.default
@@ -253,7 +253,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
             else if (typeof markerStyle == "string") {
                 markerStyle = new style_1.Style({
                     image: new style_1.Icon({
-                        anchor: [0.5, 1.0],
+                        anchor: [0.5, 0.5],
                         anchorXUnits: IconAnchorUnits_1.default.FRACTION,
                         anchorYUnits: IconAnchorUnits_1.default.FRACTION,
                         src: markerStyle
@@ -317,7 +317,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         MaplatMap.prototype.setFillEnvelope = function (xys, stroke, fill, layer) {
             if (!layer)
                 layer = "envelope";
-            var style = null;
+            var style;
             if (stroke != null || fill != null) {
                 var option = {};
                 if (stroke != null)

@@ -54,7 +54,6 @@ const accCircleStyle = new Style({
 });
 const markerDefaultStyle = new Style({
   image: new Icon({
-    //anchor: [0.5, 1.0],
     anchor: [0.5, 0.5],
     anchorXUnits: IconAnchorUnits.FRACTION,
     anchorYUnits: IconAnchorUnits.FRACTION,
@@ -238,7 +237,6 @@ export class MaplatMap extends Map {
     else if (typeof markerStyle == "string") {
       markerStyle = new Style({
         image: new Icon({
-          //anchor: [0.5, 1.0],
           anchor: [0.5, 0.5],
           anchorXUnits: IconAnchorUnits.FRACTION,
           anchorYUnits: IconAnchorUnits.FRACTION,
